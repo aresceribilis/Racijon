@@ -1,13 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Racijon.AuthService.Controllers
 {
     [ApiController]
-    [Route("api/auth")]
-    public class AuthController(JwtService jwtService) : ControllerBase
+    [Route("[controller]")]
+    public class AuthController : ControllerBase
     {
         //private readonly Mapper _mapper = mapper;
-        private readonly JwtService _jwtService = jwtService;
+        private readonly JwtService _jwtService;
+
+        public AuthController(JwtService jwtService)
+        {
+            _jwtService = jwtService;
+        }
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest request)

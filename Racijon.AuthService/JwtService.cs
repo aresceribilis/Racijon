@@ -6,9 +6,14 @@ using System.Text;
 
 namespace Racijon.AuthService
 {
-    public class JwtService(IOptions<JwtOptions> jwtOptions)
+    public class JwtService
     {
-        private readonly JwtOptions _jwtOptions = jwtOptions.Value;
+        private readonly JwtOptions _jwtOptions;
+
+        public JwtService(IOptions<JwtOptions> jwtOptions)
+        {
+            _jwtOptions = jwtOptions.Value;
+        }
 
         public string GenerateToken(Tuple<string, string, Guid> tokenModel)
         {
