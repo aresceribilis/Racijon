@@ -18,6 +18,11 @@ namespace Racijon.AuthService.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {
+            if (request == null || string.IsNullOrEmpty(request.Identifier) || string.IsNullOrEmpty(request.Password))
+            {
+                return BadRequest(new { error = "Invalid request data" });
+            }
+
             //var user = _userRepository.GetUserByEmailOrUsername(request.Identifier);
             Tuple<string, string, Guid, string> user = new("test@example.com", "test", Guid.NewGuid(), "password");
             //if (user != null && VerifyPassword(request.Password, user.PasswordHash))
