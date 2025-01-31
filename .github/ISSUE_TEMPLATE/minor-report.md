@@ -1,8 +1,8 @@
 ---
-name: Bug report
+name: Minor report
 about: Create a report to help us improve
-title: "[BUG]"
-labels: bug
+title: "[MIN]"
+labels: minor
 assignees: aresceribilis
 
 ---

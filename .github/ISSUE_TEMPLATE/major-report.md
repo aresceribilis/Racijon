@@ -1,8 +1,8 @@
 ---
-name: Hotfix report
-about: Create a report to help us resolve issues quickly
-title: "[HOT]"
-labels: hotfix
+name: Major report
+about: Create a report to help us improve
+title: "[MAJ]"
+labels: major
 assignees: ''
 
 ---
