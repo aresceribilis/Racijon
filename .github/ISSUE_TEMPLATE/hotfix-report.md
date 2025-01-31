@@ -1,5 +1,5 @@
 ---
-name: Hotfix request
+name: Hotfix report
 about: Create a report to help us resolve issues quickly
 title: "[HOT] "
 labels: bug
