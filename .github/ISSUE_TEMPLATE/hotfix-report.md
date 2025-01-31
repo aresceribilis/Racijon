@@ -1,7 +1,7 @@
 ---
 name: Hotfix report
 about: Create a report to help us resolve issues quickly
-title: "[HOT] "
+title: "[HOT]"
 labels: bug
 assignees: ''
 
