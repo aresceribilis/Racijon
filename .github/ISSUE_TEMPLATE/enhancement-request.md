@@ -2,7 +2,7 @@
 name: Enhancement request
 about: Suggest an improvement or enhancement to an existing feature or functionality
 title: "[NEW]"
-labels: enhancement
+labels: enhancement, minor
 assignees: aresceribilis
 
 ---
